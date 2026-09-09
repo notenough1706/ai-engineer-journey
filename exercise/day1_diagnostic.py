@@ -73,22 +73,29 @@
 # print("Giá trị lớn nhất:", m.max())
 # print("Vị trí (hàng, cột):", np.unravel_index(m.argmax(), m.shape))
 
+# import numpy as np
+# scores = np.array([[8, 7, 9],
+#                    [6, 9, 7],
+#                    [9, 8, 8],
+#                    [7, 6, 5],
+#                    [10, 9, 10]])
+
+# # a) TB từng học viên → tính NGANG qua hàng → axis=1
+# tb_hoc_vien = scores.mean(axis=1)
+# print(tb_hoc_vien)     # [8.   7.33 8.33 6.   9.67]
+
+# # b) TB từng môn → tính DỌC xuống cột → axis=0
+# tb_mon = scores.mean(axis=0)
+# print(tb_mon)          # [8.  7.8 7.8]
+
+# # c) Học viên giỏi nhất
+# vi_tri = tb_hoc_vien.argmax()      # index trong list tb_hoc_vien
+# ten = ["SV1", "SV2", "SV3", "SV4", "SV5"]
+# print("Học viên giỏi nhất:", ten[vi_tri])   # SV5
+
 import numpy as np
-scores = np.array([[8, 7, 9],
-                   [6, 9, 7],
-                   [9, 8, 8],
-                   [7, 6, 5],
-                   [10, 9, 10]])
-
-# a) TB từng học viên → tính NGANG qua hàng → axis=1
-tb_hoc_vien = scores.mean(axis=1)
-print(tb_hoc_vien)     # [8.   7.33 8.33 6.   9.67]
-
-# b) TB từng môn → tính DỌC xuống cột → axis=0
-tb_mon = scores.mean(axis=0)
-print(tb_mon)          # [8.  7.8 7.8]
-
-# c) Học viên giỏi nhất
-vi_tri = tb_hoc_vien.argmax()      # index trong list tb_hoc_vien
-ten = ["SV1", "SV2", "SV3", "SV4", "SV5"]
-print("Học viên giỏi nhất:", ten[vi_tri])   # SV5
+ketqua = []
+for i in range(1,21):
+    if i % 2 ==0:
+        print(ketqua(i))
+    
