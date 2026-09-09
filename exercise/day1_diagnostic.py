@@ -93,9 +93,14 @@
 # ten = ["SV1", "SV2", "SV3", "SV4", "SV5"]
 # print("Học viên giỏi nhất:", ten[vi_tri])   # SV5
 
+
 import numpy as np
+
 ketqua = []
-for i in range(1,21):
-    if i % 2 ==0:
-        print(ketqua(i))
-    
+for i in range(1, 21):
+    if i % 2 == 0:
+        ketqua.append(i)
+print(ketqua)                  
+
+import numpy as np
+print(np.arange(2, 21, 2))
